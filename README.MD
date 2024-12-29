@@ -10,8 +10,12 @@ docker pull mariadb:latest
 docker-compose up -d
 
 ## Otros
-docker images
-docker ps
-docker ps -a
-docker logs <container_name>
-docker logs
+
+[x] docker images
+<br>
+[x] docker ps
+<br>
+[x] docker ps -a
+<br>
+[x] docker logs <container_name>
+[x] docker logs
