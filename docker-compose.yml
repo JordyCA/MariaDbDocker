@@ -1,0 +1,20 @@
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb_container
+    restart: always
+    ports:
+      - "3307:3306"  # Puerto 3307 del host mapeado al puerto 3306 del contenedor
+    environment:
+      MARIADB_ROOT_PASSWORD: rootpassword
+      MARIADB_DATABASE: test
+      MARIADB_USER: appuser
+      MARIADB_PASSWORD: apppassword
+    volumes:
+      # Persistencia de informacion
+      #- mariadb_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+    #Persistencia de informacion
+    #volumes:
+      #mariadb_data: {}
