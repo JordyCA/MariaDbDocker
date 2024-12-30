@@ -10,12 +10,10 @@ docker pull mariadb:latest
 docker-compose up -d
 
 ## Otros
+- [x] docker images
+- [x] docker ps
+- [x] docker ps -a
+- [x] docker logs <container_name>
+- [x] docker logs
 
-[x] docker images
-<br>
-[x] docker ps
-<br>
-[x] docker ps -a
-<br>
-[x] docker logs <container_name>
-[x] docker logs
+- [x] netstat -putona | grep  3307
