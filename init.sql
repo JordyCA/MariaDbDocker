@@ -7,10 +7,10 @@ FLUSH PRIVILEGES;*/
 USE test;
 
 CREATE TABLE usuarios (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(255) NOT NULL,
-    usuario VARCHAR(255) NOT NULL,
-    password VARCHAR(255) NOT NULL
+    id INT AUTO_INCREMENT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NULL
 );
 
 -- Crear un usuario con todos los permisos
